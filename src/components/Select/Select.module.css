@@ -1,0 +1,112 @@
+/* Контейнер всего компонента */
+.selectContainer {
+  width: 361px;
+  position: relative;
+  font-family: Poppins;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 20px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: #3F4254;
+  border-radius: 4px;
+}
+.header{
+  font-size: 12px;
+  font-family: Poppins;
+}
+
+/* Заголовок выпадающего списка */
+.selectHeader {
+  width: 250px;
+  height: 32px;
+  padding: 0 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  background-color: #fff;
+  box-sizing: border-box;
+}
+
+.selectHeader.open {
+  border: 1px solid #4971FF;
+}
+
+.selectHeader.selectItem {
+  border: 1px solid #4971FF;
+}
+
+.selectHeader span {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  flex: 1;
+}
+
+.arrowIcon {
+  width: 16px;
+  height: 16px;
+  transition: transform 0.3s ease;
+}
+
+/* Список */
+.selectList {
+  max-height: calc(5 * 32px);
+  overflow-y: auto;
+  border: 1px solid #ddd;
+  background: #fff;
+  position: absolute;
+  width: 100%;
+  z-index: 1000;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+/* Элемент списка */
+.selectItem {
+  height: 32px;
+  line-height: 16px;
+  padding: 8px 12px 8px 12px;
+  gap: 8px;
+  border: 2px 0px 0px 0px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.selectItem:hover {
+  background-color: #E4EAFF;
+}
+
+/* Обозначение выбранного элемента */
+.selectItem[style] {
+  border: 2px solid #4971FF;
+}
+
+/* Индикатор загрузки */
+.loadingIndicator {
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Кружок с первой буквой имени */
+.userCircle {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background-color: #4971FF;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 20px;
+}
