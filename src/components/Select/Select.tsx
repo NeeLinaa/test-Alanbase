@@ -1,4 +1,3 @@
-// src/components/Select/Select.tsx
 import React, { useState, useEffect, useRef } from 'react';
 import { User } from '../../api/interfaces';
 import { fetchUsers } from '../../api/api';

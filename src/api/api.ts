@@ -1,4 +1,3 @@
-// src/api.ts
 import { ApiResponse, User } from './interfaces';
 
 export const fetchUsers = async (currentPage: number): Promise<User[]> => {
